@@ -1,0 +1,16 @@
+Chisel Coverage Property Project:
+
+Done:
+{
+    - build chisel 2
+    - figure out chisel 2 sbt build system
+}
+
+Todo:
+{
+    - build chisel 2 test harness
+}
+
+Notes:
+{
+}
