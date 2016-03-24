@@ -9,6 +9,17 @@ Done:
 Todo:
 {
     - build chisel 2 test harness
+    {
+        - Done:
+        {
+            - create Adder src files
+        }
+        - Todo:
+        {
+            - figure out how to generate C++
+            - figure out how to generate Verilog
+        }
+    }
 }
 
 Notes:
