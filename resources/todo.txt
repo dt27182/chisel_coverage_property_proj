@@ -24,4 +24,5 @@ Todo:
 
 Notes:
 {
+    - probably want to generate real chisel nodes annotated as coverage in chisel 3
 }

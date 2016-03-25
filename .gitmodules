@@ -1,3 +1,3 @@
-[submodule "results/chisel"]
-	path = results/chisel
+[submodule "results/cover_property_testbench/chisel"]
+	path = results/cover_property_testbench/chisel
 	url = git@github.com:ucb-bar/chisel.git
