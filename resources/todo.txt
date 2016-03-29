@@ -8,18 +8,22 @@ Done:
 
 Todo:
 {
-    - build chisel 2 test harness
-    {
-        - Done:
+    - setup project on millennium
+        - build chisel 2 test harness
         {
-            - create Adder src files
+            - Done:
+            {
+                - create Adder src files
+            }
+            - Todo:
+            {
+                - figure out how to generate C++
+                - figure out how to generate Verilog
+            }
         }
-        - Todo:
-        {
-            - figure out how to generate C++
-            - figure out how to generate Verilog
-        }
-    }
+    - setup intellij on millennium
+    - create chisel 2 general program flow
+    - plan out DSP for coverage properties
 }
 
 Notes:
