@@ -1,3 +1,6 @@
 [submodule "results/cover_property_testbench/chisel"]
 	path = results/cover_property_testbench/chisel
 	url = git@github.com:ucb-bar/chisel.git
+[submodule "results/cover_property_testbench/coverage_property_dsl"]
+	path = results/cover_property_testbench/coverage_property_dsl
+	url = git@github.com:dt27182/coverage_property_dsl.git
