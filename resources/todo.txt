@@ -1,37 +1,46 @@
 Chisel Coverage Property Project:
 
 Done:
-{
     - build chisel 2
     - figure out chisel 2 sbt build system
     - build chisel 2 test harness
     - setup project on millennium
     - setup intellij on millennium
-}
+    - setup coverage_property_dsl infrastructure
+    - plan out DSP for coverage properties
 
 Todo:
-{
-    - plan out DSP for coverage properties
-    {
-        Notes:
-        {
-            - does it make sense for 2 occurances of the same sequence to overlap in time?
-                - yes, it does
-                - how can this be implemented?
-                    - a detection FSM needs to be spawned for each occurance of the first event in the sequence?
-                    - if dequence is finitely long, a fixed number of FSMs can be spawned ahead of time and assigned as needed
-            - what is the meaning of the implication operator?
-                - how is it different than chaining the 2 sequences together?
-                    - FSMs for the 2nd sequence should not be assigned until a FSM for the first sequence evaluates to true
-                    - 2 separate counts for when the first sequence evaluates to true and then 2nd sequences evaluates to true and when the first sequence evaluates to true and then the 2nd sequence evaluates to false
-                        - how to detect when the 2nd sequence evaluates to false? 
-                            - default FSM implementation is sufficient
-
-        }
-    }
-}
+    - first iteration (end to end)
+        - Done:
+            - implement start sequence fsm generator
+            - implement delay sequence fsm generator
+            - implement concat sequence fsm generator
+        - Todo:
+            - setup test infrastructure
+                - learn scala test
+                - write test for start sequence
+                - write test for delay sequence
+                - write test for concat sequence
+            - create fsm generator for assertion with implication operator
+            - create fsm generator for coverage with implication operator
+                
+    - later iterations:
+        - support for or sequences
+            - need to discuss which way to do this
+        - support for sequence repetition
+        - support for and sequences
+        - support for intersect sequences
 
 Notes:
-{
-    - probably want to generate real chisel nodes annotated as coverage in chisel 3
-}
+    - does it make sense for 2 occurances of the same sequence to overlap in time?
+        - yes, it does
+        - how can this be implemented?
+            - a detection FSM needs to be spawned for each occurance of the first event in the sequence?
+            - if dequence is finitely long, a fixed number of FSMs can be spawned ahead of time and assigned as needed
+    - what is the meaning of the implication operator?
+        - how is it different than chaining the 2 sequences together?
+            - FSMs for the 2nd sequence should not be assigned until a FSM for the first sequence evaluates to true
+            - 2 separate counts for when the first sequence evaluates to true and then 2nd sequences evaluates to true and when the first sequence evaluates to true and then the 2nd sequence evaluates to false
+                - how to detect when the 2nd sequence evaluates to false? 
+                    - default FSM implementation is sufficient
+

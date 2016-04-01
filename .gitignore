@@ -1,4 +1,5 @@
 *.swp
+*.swo
 results/cover_property_testbench/target/*
 results/cover_property_testbench/project/*
 results/cover_property_testbench/Hello*
