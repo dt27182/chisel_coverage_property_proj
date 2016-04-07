@@ -15,15 +15,14 @@ Todo:
             - implement start sequence fsm generator
             - implement delay sequence fsm generator
             - implement concat sequence fsm generator
-        - Todo:
             - setup test infrastructure
-                - learn scala test
-                - write test for start sequence
-                - write test for delay sequence
-                - write test for concat sequence
             - create fsm generator for assertion with implication operator
+        - Todo:
+            - refactor usage of scala classes
+            - refactor start sequence delay sequence implementation
             - create fsm generator for coverage with implication operator
-                
+            - create scala synatic sugar for setting up coverage statements
+
     - later iterations:
         - support for or sequences
             - need to discuss which way to do this
